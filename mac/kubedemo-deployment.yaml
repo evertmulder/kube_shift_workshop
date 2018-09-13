@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: razor
+  name: razor
+  namespace: kubedemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: razor
+  template:
+    metadata:
+      labels:
+        app: razor
+    spec:    
+      containers:
+        - name: razor
+          image: evertmulder/razor:v1
+          livenessProbe:
+            httpGet:
+              port: 80
+              path: /
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 3
+          ports:
+          - containerPort: 80
+      

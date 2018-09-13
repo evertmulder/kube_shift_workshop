@@ -1,0 +1,8 @@
+Pas Index.cshtml aan
+Pas api HelloController aan
+
+cd ../razor
+dotnet publish -c Release -o out
+docker build -t evertmulder/razor:v2 .
+
+docker images | Select-String -Pattern "razor"

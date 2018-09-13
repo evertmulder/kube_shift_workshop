@@ -1,0 +1,6 @@
+cd ..\razor
+dotnet publish -c Release -o out
+docker build -t evertmulder/razor:v1 .
+docker images
+docker image history evertmulder/razor:v1
+docker image inspect evertmulder/razor:v1
