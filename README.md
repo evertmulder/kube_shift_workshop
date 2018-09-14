@@ -16,6 +16,7 @@ Get introduced to kubenetes basic concepts, the powers of a container platform a
   - Environment variables
   - System variables --> Edit Path
   - Add C:\minishift
+  - For Mac: Edit ~/.bash_profile
 - Install docker client only (the docker installation for windows will install HyperV, and kills VirtualBox)
   - https://download.docker.com/win/static/stable/x86_64/ (windows)
   - https://download.docker.com/mac/static/stable/x86_64/ (mac)
