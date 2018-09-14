@@ -6,10 +6,6 @@ Get introduced to kubenetes basic concepts, the powers of a container platform a
 
 ## Prerequisites
 - Download and install VirtualBox
-- Enable linux subsystem. Run in admin console:
-```
- Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
 - Download minishift binary
   https://github.com/minishift/minishift/releases
 - Add the minishift binary to the path
