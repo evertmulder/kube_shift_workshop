@@ -17,7 +17,8 @@ Get introduced to kubenetes basic concepts, the powers of a container platform a
   - System variables --> Edit Path
   - Add C:\minishift
 - Install docker client only (the docker installation for windows will install HyperV, and kills VirtualBox)
-  - https://download.docker.com/win/static/stable/x86_64/
+  - https://download.docker.com/win/static/stable/x86_64/ (windows)
+  - https://download.docker.com/mac/static/stable/x86_64/ (mac)
   - Unzip and copy docker.exe the path (just use the same path as for minishift)
   - test by running: `docker version` in a command prompt
 - Install dotnet core SDK
