@@ -6,9 +6,16 @@ Get introduced to kubenetes basic concepts, the powers of a container platform a
 
 ## Prerequisites
 - Download and install VirtualBox
-- Download minishift binary
+- Download minishift binary, copy the minishift.exe to c:\minishift
   https://github.com/minishift/minishift/releases
 - Add the minishift binary to the path
+  - For windows:
+  - Open windows exporer
+  - Right click on "My Computer" --> Properties
+  - Advanced system settings
+  - Environment variables
+  - System variables --> Edit Path
+  - Add C:\minishift
 - Install docker client only (the docker installation for windows will install HyperV, and kills VirtualBox)
   - https://download.docker.com/win/static/stable/x86_64/
   - Unzip and copy docker.exe the path (just use the same path as for minishift)
