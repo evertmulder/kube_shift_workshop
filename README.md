@@ -6,7 +6,7 @@ Get introduced to kubenetes basic concepts, the powers of a container platform a
 
 ## Prerequisites
 - Download and install VirtualBox
-- Download minishift binary, copy the minishift.exe to c:\minishift
+- Download minishift binary, copy the minishift.exe to c:\minishift  
   https://github.com/minishift/minishift/releases
 - Add the minishift binary to the path
   - For windows:
