@@ -1,0 +1,12 @@
+FROM microsoft/dotnet:aspnetcore-runtime
+ENV ASPNETCORE_URLS="http://*:8080"
+EXPOSE 8080
+WORKDIR /app
+COPY ./out .
+
+RUN chown -R 33:33 ./; \
+ chmod -R 0500 ./; \
+ chmod -R 0700 *.dll
+
+USER 33
+ENTRYPOINT ["dotnet", "razor.dll"]
